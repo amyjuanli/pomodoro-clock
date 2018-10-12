@@ -1,0 +1,47 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div id="timerContainer">
+        <h1>Pomodoro Timer</h1>
+        <div class="custom">
+            <div class="worklength">
+                <h3>Worklength</h3>
+                <button class="work-decrement" onclick="decrement(this)">-</button><span class="worklength">25</span><button
+                    class="work-increment" onclick="increment(this)">+</button>
+            </div>
+            <div class="breaklength">
+                <h3>Breaklength</h3>
+                <button class="break-decrement" onclick="decrement(this)">-</button><span class="breaklength">5</span><button
+                    class="break-increment" onclick="increment(this)">+</button>
+            </div>
+        </div>
+
+        <div class="timer">
+            <svg id="circle" viewbox="0 0 180 180" width="180" height="180" xmlns="http://www.w3.org/2000/svg">
+                <circle class="chart_background" cx="90" cy="90" r="80" stroke="#ffffff" stroke-width="10" fill="none" />
+                <circle class="chart_circle" cx="90" cy="90" r="80" stroke-width="10" fill="none" stroke-dasharray="0, 503" />
+                <g class="number"><text x="80" y="90">25:00</text></g>
+            </svg>
+        </div>
+        <div id="btns">
+            <button id="start">Start</button>
+            <button id="stop">Stop</button>
+            <button id="reset">Reset</button>
+        </div>
+        <div class="count">
+
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

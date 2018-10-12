@@ -1,0 +1,60 @@
+body {
+    text-align: center;
+    height: 100vh;
+    background-color: skyblue;
+  }
+
+  #timerContainer {
+    width: 80%;
+    margin: 20vh auto;
+  }
+
+  .custom {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .custom div {
+    width: 300px;
+  }
+
+  .worklength {
+    color: #0f459b;
+    margin: auto;
+  }
+  
+  .breaklength{
+    color: forestgreen;
+    margin: auto;
+  }
+  .timer {
+    text-align: center;
+  }
+  
+  /* svg circle chart */
+  .chart_circle {
+    transform: rotate(-90deg);
+    transform-origin: center;
+  }
+  
+  #btns button {
+    color: white;
+    font-size: 16px;
+  }
+  
+  #start {
+    background-color: blue;
+  }
+  
+  #stop {
+    background-color: red;
+  }
+  #reset {
+    background-color:grey;
+  }
+  
+  
+  
+  
+  
+  
